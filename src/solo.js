@@ -18,6 +18,7 @@ function solo() {
 		}
 
 		emitter.on(state.events.DOMCONTENTLOADED, loaded)
+		emitter.on('solo:save', save)
 
 		async function loaded() {
 			if (state.p2p) await read_dat()
@@ -59,6 +60,16 @@ function solo() {
 					}
 				})
 			})
+		}
+
+		async function save(title, text) {
+			var content = smarkt.stringify({title: title.trim(), text: text.trim()})
+
+			await archive.writeFile('/content.txt', content)
+			await archive.commit()
+
+			state.saved = true
+			emitter.emit('render')
 		}
 	}
 }

@@ -32,4 +32,8 @@ module.exports = class Textarea extends Nanocomponent {
 	update(value) {
 		return this.value !== value
 	}
+
+	get_value() {
+		return this.element.value
+	}
 }

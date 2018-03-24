@@ -8,6 +8,9 @@ const reader = require('./views/reader')
 const app = choo()
 
 app.use(solo())
+app.use((state, emitter) => {
+	state.saved = false
+})
 
 app.route('*', view)
 app.mount('main')
