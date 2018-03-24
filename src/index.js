@@ -1,8 +1,9 @@
 const choo = require('choo')
+const solo = require('./solo')
 
 const app = choo()
 
-app.use(require('./solo.js')())
+app.use(solo())
 
 app.route('*', require('./views/main'))
 app.mount('main')
