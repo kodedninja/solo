@@ -2,9 +2,10 @@ const Nanocomponent = require('nanocomponent')
 const html = require('nanohtml')
 
 module.exports = class Textarea extends Nanocomponent {
-	constructor() {
+	constructor(props) {
 		super()
 
+		this.props = props
 		this.value = ''
 	}
 
@@ -12,7 +13,7 @@ module.exports = class Textarea extends Nanocomponent {
 		var t = this
 		this.value = value
 		return html`
-			<textarea class="db 1" style="overflow: hidden; resize: none;" onkeydown="${key}">${value}</textarea>
+			<textarea class="db 1" placeholder="${this.props.placeholder ? this.props.placeholder : ''}" style="overflow: hidden; resize: none;" onkeydown="${key}">${value}</textarea>
 		`
 
 		function key(e) {
