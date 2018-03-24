@@ -1,0 +1,26 @@
+{
+  "name": "solo",
+  "version": "0.1.0",
+  "description": "The simplest publication tool",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "watchify src/index.js -o bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kodedninja/solo.git"
+  },
+  "author": "kodedninja",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kodedninja/solo/issues"
+  },
+  "homepage": "https://github.com/kodedninja/solo#readme",
+  "dependencies": {
+    "choo": "^6.6.1",
+    "markdown-it": "^8.4.1",
+    "nanohtml": "^1.2.2",
+    "watchify": "^3.9.0",
+    "xhr": "^2.4.1"
+  }
+}
