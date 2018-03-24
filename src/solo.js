@@ -1,4 +1,5 @@
 const xhr = require('xhr')
+const smarkt = require('smarkt')
 
 module.exports = solo
 
@@ -27,14 +28,14 @@ function solo() {
 			state.solo.info = await archive.getInfo({timeout: 1000})
 
 			try {
-				var content = await archive.readFile('/content.json')
+				var content = await archive.readFile('/content.txt')
 			} catch (e) {
-				content = '{}'
-				archive.writeFile('/content.json', '{}')
+				content = ''
+				archive.writeFile('/content.txt', '')
 			}
 
 			try {
-				state.solo.content = JSON.parse(content)
+				state.solo.content = smarkt.parse(content)
 			} catch (e) {
 				console.error('Error in content.json')
 			}

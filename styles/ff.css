@@ -6,7 +6,7 @@
 ::-moz-selection { color: #fff; background: #000; }
 ::selection { color: #fff; background: #000; }
 
-html { font-size: 14px }
+html { font-size: 18px }
 
 body, pre {
    font-family: 'Inter UI', helvetica, sans-serif;
@@ -29,14 +29,12 @@ a:not(.nbb) {
 
 /* Typography */
 
-h1, h2, h3, .f1, .f2, .f3 { font-family: 'Inter UI', helvetica, sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-weight: inherit; }
 
-h1, .f1 { font-size: 3rem; }
-h2, .f2 { font-size: 2.25rem; }
+h1, .f1 { font-size: 2.5rem; }
+h2, .f2 { font-size: 2rem; }
 h3, .f3 { font-size: 1.5rem; }
 .f4 { font-size: 1.25rem; }
-.f5 { font-size: 1rem; }
-.f6 { font-size: .875rem; }
 
 .i { font-style: italic; }
 .b { font-weight: bold; }
@@ -49,6 +47,7 @@ h3, .f3 { font-size: 1.5rem; }
 .ffi { font-family: 'Inter UI', helvetica, sans-serif; }
 .ffss { font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, helvetica, 'helvetica neue', ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; }
 .ffh { font-family: 'helvetica neue', helvetica, sans-serif; }
+.ffg { font-family: 'georgia'; }
 .ffmono { font-family: monospace }
 
 .fwb { font-weight: bold; }
