@@ -2,4 +2,4 @@ title: solo ― the simplest publishing tool
 ----
 text: This is *solo*. It's the simplest publishing tool that supports both the peer-to-peer and the normal web. It has a bigger brother, [orkl](https://orkl-kodedninja.hashbase.io), and an even bigger cousin, [Enoki](https://enoki.site).
 
-*solo* can't compete with their functionality, but it doesn't even want to. It only wants to be simple. Very simple. The most simple.
+*Solo* can't compete with their functionality, but it doesn't even want to. It only wants to be simple. Very simple. The most simple.

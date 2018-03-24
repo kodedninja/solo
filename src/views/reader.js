@@ -7,7 +7,7 @@ module.exports = view
 function view (state, emit) {
 	return html`
 		<div>
-			<div class="f1 fwb">
+			<div class="f1">
 				${state.solo.content.title}
 			</div>
 			<div>

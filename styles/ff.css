@@ -165,17 +165,13 @@ p > img {
 
 input, textarea {
 	outline: none;
+	border: none;
 	font-family: 'Inter UI', helvetica, sans-serif;
     line-height: 1.6;
     font-size: 1rem;
     font-feature-settings:"onum" 1, "pnum" 1, "kern" 1, "ss01" 1;
     font-kerning: normal;
     letter-spacing: 0.5px;
-}
-
-textarea {
-	resize: none;
-	height: 60vh;
 }
 
 /* Media query customs */

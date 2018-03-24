@@ -19,6 +19,7 @@
   "dependencies": {
     "choo": "^6.6.1",
     "markdown-it": "^8.4.1",
+    "nanocomponent": "^6.5.1",
     "nanohtml": "^1.2.2",
     "smarkt": "0.0.6",
     "watchify": "^3.9.0",
