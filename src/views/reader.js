@@ -2,6 +2,8 @@ const html = require('nanohtml')
 const raw = require('nanohtml/raw')
 const md = require('markdown-it')()
 
+const buttons = require('../components/buttons')
+
 module.exports = view
 
 function view (state, emit) {
@@ -13,6 +15,7 @@ function view (state, emit) {
 			<div>
 				${raw(md.render(state.solo.content.text))}
 			</div>
+			${state.preview ? buttons(state, emit, null, null) : ''}
 		</div>
 	`
 }

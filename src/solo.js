@@ -62,8 +62,8 @@ function solo() {
 			})
 		}
 
-		async function save(title, text) {
-			var content = smarkt.stringify({title: title.trim(), text: text.trim()})
+		async function save() {
+			var content = smarkt.stringify({title: state.solo.content.title.trim(), text: state.solo.content.text.trim()})
 
 			await archive.writeFile('/content.txt', content)
 			await archive.commit()
