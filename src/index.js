@@ -9,7 +9,12 @@ const app = choo()
 
 app.use(solo())
 app.use((state, emitter) => {
-	state.saved = false
+	state.saved = true
+
+	emitter.on('solo:contentChanged', () => {
+		state.saved = false
+		emitter.emit('render')
+	})
 })
 
 app.use((state, emitter) => {

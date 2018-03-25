@@ -20,7 +20,7 @@ function view (state, emit) {
 				${title.render(state.solo.content.title)}
 			</div>
 			<div>
-				${textarea.render(state.solo.content.text)}
+				${textarea.render(state.solo.content.text, emit)}
 			</div>
 			${buttons(state, emit, title, textarea)}
 		</div>

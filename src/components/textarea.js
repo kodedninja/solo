@@ -9,7 +9,7 @@ module.exports = class Textarea extends Nanocomponent {
 		this.value = ''
 	}
 
-	createElement(value) {
+	createElement(value, emit) {
 		var t = this
 		this.value = value
 		return html`
@@ -17,6 +17,8 @@ module.exports = class Textarea extends Nanocomponent {
 		`
 
 		function key(e) {
+			if (t.value != t.element.value) emit('solo:contentChanged')
+
 			if (t.element.offsetHeight < t.element.scrollHeight) {
 				t.element.style.height = t.element.scrollHeight + 40 + 'px'
 			}

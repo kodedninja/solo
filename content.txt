@@ -4,7 +4,4 @@ text: This is *solo*. It's the simplest publishing tool that supports both the p
 
 *Solo* can't compete with their functionality, but it doesn't even want to. It only wants to be simple. Very simple. The most simple.
 
-Anton 🔧
-
-todo: 
-- save button reactive
+Anton 🔧 (this is a secret, yet)
