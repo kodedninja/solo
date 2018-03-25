@@ -8,7 +8,7 @@ The main inspiration was [Telegra.ph](http://telegra.ph). Every entry is under a
 
 Firstly, make an editable copy of an existing *solo* entry. 
 
-Then, Navigate to the new site and you can start writing. In the content you can use [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) and see the result by pressing the **preview** button.
+Then, Navigate to the new site, delete what you don't need and you can start writing. In the content you can use [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) and see the result by pressing the **preview** button. Naturally, if somebody else navigates to the site, they'll only see the result and can't edit the content.
 
 You can share the entry by sharing the Dat URL. 
 
