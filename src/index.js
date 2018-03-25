@@ -31,7 +31,7 @@ app.mount('main')
 function view(state, emit) {
 	if (!state.solo.content) return html`<main></main>`
 
-	if (state.solo.info.isOwner && !state.preview) return html`
+	if (state.solo.info && state.solo.info.isOwner && !state.preview) return html`
 		<main class="db 1 p2">
 			<div class="mw 1 mxa">
 				${editor(state, emit)}

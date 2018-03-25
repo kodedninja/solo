@@ -49,10 +49,9 @@ function solo() {
 
 			return new Promise(function (resolve, reject) {
 				var bust = Math.floor(Date.now() / 1000)
-				xhr('/content.json?' + bust, function (err, res) {
+				xhr('/content.txt?' + bust, function (err, res) {
 					try {
-						state.solo.content = JSON.parse(res.body)
-
+						state.solo.content = smarkt.parse(res.body)
 						emitter.emit(state.events.RENDER)
 						resolve()
 					} catch (err) {
