@@ -31,6 +31,8 @@ app.mount('main')
 function view(state, emit) {
 	if (!state.solo.content) return html`<main></main>`
 
+	emit('DOMTitleChange', state.solo.content.title)
+
 	if (state.solo.info && state.solo.info.isOwner && !state.preview) return html`
 		<main class="db 1 p2">
 			<div class="mw 1 mxa">
