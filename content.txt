@@ -2,6 +2,19 @@ title: solo ― the simplest publishing tool
 ----
 text: This is *solo*. It's the simplest publishing tool that supports both the peer-to-peer and the normal web. It has a bigger brother, [orkl](https://orkl-kodedninja.hashbase.io), and an even bigger cousin, [Enoki](https://enoki.site).
 
-*Solo* can't compete with their functionality, but it doesn't even want to. It only wants to be simple. Very simple. The most simple.
+The main inspiration was [Telegra.ph](http://telegra.ph). Every entry is under a different Dat URL and there's no index page like on blogs or publishing platforms. Only *disconnected texts* that centralize in the author's mind.
 
-Anton 🔧 (this is a secret, yet)
+### Writing
+
+Firstly, make an editable copy of an existing *solo* entry. 
+
+Then, Navigate to the new site and you can start writing. In the content you can use [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) and see the result by pressing the **preview** button.
+
+You can share the entry by sharing the Dat URL. 
+
+### About
+[Source code](https://github.com/kodedninja/solo)
+
+Thanks to [choo](https://choo.io), [Beaker Browser](https://beakerbrowser.com) and [Inter UI](https://rsms.me/inter).
+
+*Made by [Hunor Karaman](http://hex22.org)*
