@@ -31,8 +31,14 @@ module.exports = class Textarea extends Nanocomponent {
 		}
 	}
 
+	afterupdate (element) {
+		if (element.style.height == '') {
+			element.style.height = element.scrollHeight + 40 + 'px'
+		}
+	}
+
 	update(value) {
-		return false
+		return value != this.value
 	}
 
 	get_value() {
