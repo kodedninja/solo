@@ -154,14 +154,9 @@ code {
 
 img {
 	width: 100%;
-    border-radius: 3px;
-}
-
-p > img {
-    width: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 input, textarea {
