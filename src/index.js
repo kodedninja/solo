@@ -1,5 +1,6 @@
 const choo = require('choo')
 const html = require('nanohtml')
+const update = require('forkup')
 
 const solo = require('./solo')
 const editor = require('./views/editor')

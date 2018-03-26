@@ -18,6 +18,7 @@
   "homepage": "https://github.com/kodedninja/solo#readme",
   "dependencies": {
     "choo": "^6.6.1",
+    "forkup": "^0.1.0",
     "markdown-it": "^8.4.1",
     "nanocomponent": "^6.5.1",
     "nanohtml": "^1.2.2",
