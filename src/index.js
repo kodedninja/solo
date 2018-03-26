@@ -25,7 +25,9 @@ app.use((state, emitter) => {
 	})
 })
 
+app.route('/update', update_view)
 app.route('*', view)
+
 app.mount('main')
 
 function view(state, emit) {
@@ -48,4 +50,12 @@ function view(state, emit) {
 			</div>
 		</main>
 	`
+}
+
+
+function update_view(state, emit) {
+	update('dat://b89507488b68892978dcdc6cb32e21040b2cd0fdcd304c502e17289aad10d95e/', ['/bundle.js'])
+	emit('pushState', '/')
+
+	return html`<main>Update</main>`
 }
