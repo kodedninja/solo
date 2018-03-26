@@ -17,7 +17,7 @@ function view (state, emit) {
 	return html`
 		<div>
 			<div>
-				${title.render(state.solo.content.title, emit)}
+				${title.render(state.solo.content.title)}
 			</div>
 			<div>
 				${textarea.render(state.solo.content.text, emit)}
