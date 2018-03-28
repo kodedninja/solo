@@ -14,7 +14,8 @@ function solo() {
 
 		state.solo = {
 			content: null,
-			info: null
+			info: null,
+			loaded: false
 		}
 
 		emitter.on(state.events.DOMCONTENTLOADED, loaded)
@@ -41,6 +42,7 @@ function solo() {
 				console.error('Error in content.json')
 			}
 
+			state.solo.loaded = true
 			emitter.emit('render')
 		}
 
@@ -52,6 +54,7 @@ function solo() {
 				xhr('/content.txt?' + bust, function (err, res) {
 					try {
 						state.solo.content = smarkt.parse(res.body)
+						state.solo.loaded = true
 						emitter.emit(state.events.RENDER)
 						resolve()
 					} catch (err) {

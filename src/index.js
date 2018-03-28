@@ -32,7 +32,7 @@ app.route('*', view)
 app.mount('main')
 
 function view(state, emit) {
-	if (!state.solo.content) return html`<main></main>`
+	if (!state.solo.loaded) return html`<main><div class="loading"></div></main>`
 
 	emit('DOMTitleChange', state.solo.content.title)
 
