@@ -55,7 +55,7 @@ function view(state, emit) {
 
 
 function update_view(state, emit) {
-	update('dat://b89507488b68892978dcdc6cb32e21040b2cd0fdcd304c502e17289aad10d95e/', ['/bundle.js'])
+	update()
 	emit('pushState', '/')
 
 	return html`<main>Update</main>`

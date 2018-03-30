@@ -18,12 +18,18 @@
   "homepage": "https://github.com/kodedninja/solo#readme",
   "dependencies": {
     "choo": "^6.6.1",
-    "forkup": "^0.1.0",
+    "forkup": "^0.1.1",
     "markdown-it": "^8.4.1",
     "nanocomponent": "^6.5.1",
     "nanohtml": "^1.2.2",
     "smarkt": "0.0.6",
     "watchify": "^3.9.0",
     "xhr": "^2.4.1"
+  },
+  "update": {
+    "url": "dat://b89507488b68892978dcdc6cb32e21040b2cd0fdcd304c502e17289aad10d95e/",
+    "files": [
+      "/bundle.js"
+    ]
   }
 }
