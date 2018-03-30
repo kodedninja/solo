@@ -58,5 +58,5 @@ function update_view(state, emit) {
 	update()
 	emit('pushState', '/')
 
-	return html`<main>Update</main>`
+	return html`<main><div class="loading"></div></main>`
 }
