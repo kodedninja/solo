@@ -2,6 +2,8 @@ const html = require('nanohtml')
 const raw = require('nanohtml/raw')
 const md = require('markdown-it')()
 
+md.use(require('markdown-it-sup'))
+
 const buttons = require('../components/buttons')
 
 module.exports = view
