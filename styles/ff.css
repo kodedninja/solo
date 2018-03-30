@@ -170,6 +170,12 @@ input, textarea {
     letter-spacing: 0.5px;
 }
 
+hr {
+	border: none;
+	margin: 2rem 0;
+	border-bottom: 1px solid #000;
+}
+
 /* Media query customs */
 
 @media (max-width: 900px) {
