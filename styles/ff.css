@@ -61,8 +61,12 @@ h3, .f3 { font-size: 1.5rem; }
 
 .lh1 { line-height: 1.2 }
 
-p {
+p, ul, ol {
 	margin: 2rem 0;
+}
+
+li {
+	margin: 0.5rem 0;
 }
 
 p blockquote {
@@ -174,6 +178,24 @@ hr {
 	border: none;
 	margin: 2rem 0;
 	border-bottom: 1px solid #000;
+}
+
+.loading {
+  margin: -1rem;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border: 3px solid #fff;
+  border-top: 3px solid #000;
+  border-left: 3px solid #000;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg) }
+  100% { transform: rotate(360deg) }
 }
 
 /* Media query customs */

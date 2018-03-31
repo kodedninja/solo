@@ -1,6 +1,6 @@
 {
   "name": "solo",
-  "version": "0.2.11",
+  "version": "0.2.12",
   "description": "The simplest publication tool",
   "main": "src/index.js",
   "scripts": {
@@ -31,7 +31,7 @@
     "url": "dat://b89507488b68892978dcdc6cb32e21040b2cd0fdcd304c502e17289aad10d95e/",
     "files": [
       "/bundle.js",
-	  "/styles/ff.css"
+      "/styles/ff.css"
     ]
   }
 }
