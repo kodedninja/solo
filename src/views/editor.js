@@ -13,7 +13,14 @@ const textarea = new Textarea({
 
 module.exports = view
 
+var k = false
+
 function view (state, emit) {
+	if (!k) {
+		document.addEventListener('keydown', keydown)
+		k = true
+	}
+
 	return html`
 		<div>
 			<div>
@@ -25,4 +32,20 @@ function view (state, emit) {
 			${buttons(state, emit, title, textarea)}
 		</div>
 	`
+
+	function keydown(e) {
+		if (e.ctrlKey && e.keyCode == 83) {
+			e.preventDefault()
+			save()
+		}
+	}
+
+	function save() {
+		if (!state.preview) {
+			state.solo.content.title = title.get_value()
+			state.solo.content.text = textarea.get_value()
+		}
+
+		emit('solo:save')
+	}
 }
