@@ -1,6 +1,6 @@
 {
   "name": "solo",
-  "version": "0.2.12",
+  "version": "0.2.2",
   "description": "The simplest publication tool",
   "main": "src/index.js",
   "scripts": {
