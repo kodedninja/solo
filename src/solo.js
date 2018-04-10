@@ -20,6 +20,7 @@ function solo() {
 
 		emitter.on(state.events.DOMCONTENTLOADED, loaded)
 		emitter.on('solo:save', save)
+		emitter.on('solo:file', handle_file)
 
 		async function loaded() {
 			if (state.p2p) await read_dat()
@@ -72,6 +73,14 @@ function solo() {
 
 			state.saved = true
 			emitter.emit('render')
+		}
+
+		async function handle_file(file) {
+			try {
+				await archive.mkdir('/files')
+			} catch (e) {}
+
+			await archive.writeFile('/files/' + file.name, file.data)
 		}
 	}
 }
